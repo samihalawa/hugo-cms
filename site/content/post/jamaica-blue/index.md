@@ -1,28 +1,78 @@
 ---
-title: 'Just in: small batch of Jamaican Blue Mountain in store next week'
+title: Scrappy - Talk to your Codebase. Use ChatGPT with Github
 date: 2017-01-04T15:04:10.000Z
-description: >-
-  We’re proud to announce that we’ll be offering a small batch of Jamaica Blue
-  Mountain coffee beans in our store next week.
+description: We’re proud to announce that we’ll be offering a small batch of
+  Jamaica Blue Mountain coffee beans in our store next week.
 ---
 
-We expect the shipment of a limited quantity of green beans next Monday. We’ll be offering the roasted beans from Tuesday, but quantities are limited, so be quick.
 
-Blue Mountain Peak is the highest mountain in Jamaica and one of the highest peaks in the Caribbean at 7,402 ft. It is the home of Blue Mountain coffee and their famous tours. It is located on the border of the Portland and Saint Thomas parishes of Jamaica.
+![Scrappy Scrappy Doo.](screenshot-2024-03-21-at-16.42.28.png)
 
-## A little history
+Scrappy is a simple CLI tool that helps you collect and format code from a directory structure, making it easy to ask questions on platforms like ChatGPT by providing complete code context. With Scrappy, you can quickly generate a single Markdown file containing all the code from a module or project, so you don't have to manually copy and paste each file.
 
-The Blue Mountains are considered by many to be a hiker's and camper's paradise. The traditional Blue Mountain trek is a 7-mile hike to the peak and consists of a 3,000-foot increase in elevation. Jamaicans prefer to reach the peak at sunrise, thus the 3–4 hour hike is usually undertaken in darkness. Since the sky is usually very clear in the mornings, Cuba can be seen in the distance.
+[![Test](https://github.com/WezSieTato/scrappy/actions/workflows/test.yml/badge.svg)](https://github.com/WezSieTato/scrappy/actions/workflows/test.yml)
 
->Some of the plants found on the Blue Mountain cannot be found anywhere else in the world and they are often of a dwarfed sort.
+## Table of Contents
 
-This is mainly due to the cold climate which inhibits growth. The small coffee farming communities of Claverty Cottage and Hagley Gap are located near the peak.
+* [Installation](#installation)
+* [Usage](#usage)
+* [Development](#development)
+* [Testing](#testing)
+* [Acknowledgements](#acknowledgements)
+* [License](#license)
 
-## What you need to know before trying
+## Installation
 
-Jamaican Blue Mountain Coffee or Jamaica Blue Mountain Coffee is a classification of coffee grown in the Blue Mountains of Jamaica. The best lots of Blue Mountain coffee are noted for their mild flavor and lack of bitterness. Over the past few decades, this coffee has developed a reputation that has made it one of the most expensive and sought-after coffees in the world. Over 80% of all Jamaican Blue Mountain Coffee is exported to Japan. In addition to its use for brewed coffee, the beans are the flavor base of Tia Maria coffee liqueur.
+### From source code
 
-Jamaican Blue Mountain Coffee is a globally protected certification mark, meaning only coffee certified by the Coffee Industry Board of Jamaica can be labeled as such. It comes from a recognized growing region in the Blue Mountain region of Jamaica, and its cultivation is monitored by the Coffee Industry Board of Jamaica.
+To install Scrappy, make sure you have [Rust](https://www.rust-lang.org/tools/install) installed, and then run the following command:
 
-The Blue Mountains are generally located between Kingston to the south and Port Antonio to the north. Rising 7,402 ft, they are some of the highest mountains in the Caribbean. The climate of the region is cool and misty with high rainfall. The soil is rich, with excellent drainage. This combination of climate and soil is considered ideal for coffee.
+```sh
+cargo install --path .
+```
 
+### Homebrew
+
+```sh
+brew tap WezSieTato/scrappy
+brew install scrappy
+```
+
+## Usage
+
+To use Scrappy, navigate to the directory containing the code you want to compile and run the following command:
+
+```sh
+scrappy <source_directory> <output_file>
+```
+
+For example:
+
+```sh
+scrappy ./src output.md
+```
+
+This will generate an output.md file with the code from all the files in the src directory.
+
+## Development
+
+To contribute to the development of Scrappy, clone the repository and navigate to the project directory:
+
+```sh
+git clone https://github.com/WezSieTato/scrappy.git
+cd scrappy
+```
+
+Then, build the project using Cargo:
+
+```sh
+cargo build
+```
+
+## Testing
+
+To run the test suite for Scrappy, use the following command:
+
+```sh
+cargo test
+```
