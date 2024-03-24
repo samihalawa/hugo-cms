@@ -2,7 +2,7 @@
 title: Autoclient AI
 subtitle: Automatically extract emails from potential clients and contact them
   with personalized, AI-generated emails.！
-image: img/e832810f-500d-4e55-abc1-c5c1b6ff9f16.webp
+image: img/screenshot-2024-03-12-at-06.08.44.png
 blurb:
   heading: Why Autoclient?
   text: Kaldi is the coffee store for everyone who believes that great coffee
@@ -16,13 +16,13 @@ intro:
     production, roasting and brewing seriously and we’re glad to pass that
     knowledge to anyone.
 products:
-  - image: img/illustrations-coffee.svg
+  - image: img/screenshot-2024-03-24-at-03.44.37.png
     text: We sell green and roasted coffee beans that are sourced directly from
       independent farmers and farm cooperatives. We’re proud to offer a variety
       of coffee beans grown with great care for the environment and local
       communities. Check our post or contact us directly for current
       availability.
-  - image: /img/illustrations-coffee-gear.svg
+  - image: img/screenshot-2024-03-12-at-06.08.44.png
     text: We offer a small, but carefully curated selection of brewing gear and
       tools for every taste and experience level. No matter if you roast your
       own beans or just bought your first french press, you’ll find a gadget to
